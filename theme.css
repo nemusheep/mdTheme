@@ -20,15 +20,17 @@ body {
 }
 
 body {
-	--font-text-theme: Georgia, serif;
-	--ribbon-background: rgb(122, 117, 144);
+	--font-text-theme: "Gill Sans", sans-serif;
+	--text-muted: #c0c0c0; /*background color of code block*/
+	--ribbon-background: #867b94;
+	--background-primary-alt: #302e31; /*background color of ribbon*/
 }
 
 .theme-dark {
 	--background-primary: #242325;
 	--background-secondary: #414045;
 }
-  
+
 .theme-light {
 	--background-primary: #ECE4FF;
 	--background-secondary: #D9C9FF;
@@ -41,8 +43,6 @@ body {
 svg * {
 	stroke-linecap: square;
 	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
 }
 
 .menu {
