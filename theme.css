@@ -5,6 +5,13 @@
 	--input-disabled-border-color: transparent;
 	--input-hover-border-color: #0f0f0f;
 	/* Default Input Variables for Root */
+
+	/*color used in this template*/
+	--darkest-purple: #242325;
+	--darker-purple: #353438;
+	--dark-purple: #796f85;
+	--white-grey: #c0c0c0;
+	--black-grey: #676767;
  }
 
 body {
@@ -21,20 +28,20 @@ body {
 
 body {
 	--font-text-theme: "Gill Sans", sans-serif;
-	--text-muted: #c0c0c0; /*text color of code block*/
-	--ribbon-background: #796f85;
-	--background-primary-alt: #302e31; /*background color of ribbon*/
+	--text-muted: var(--white-grey); /*text color of code block*/
+	--ribbon-background: var(--dark-purple);
+	--background-primary-alt: var(--darkest-purple); /*background color of ribbon*/
 }
 
 .theme-dark {
-	--background-primary: #242325;
-	--background-secondary: #353438;
+	--background-primary: var(--darkest-purple);
+	--background-secondary: var(--darker-purple);
 
 	.markdown-source-view {
 		/*source view*/
 		.cm-header-1 {
 			display: block;
-			border-bottom: 2px dotted #676767;
+			border-bottom: 2px dotted var(--black-grey);
 		}
 		.cm-header-1::before {
 			content: '◇';
@@ -44,7 +51,7 @@ body {
 		.cm-header-2 {
 			padding: 0;
 			display: block;
-			border-bottom: 2px dotted #676767;
+			border-bottom: 2px dotted var(--black-grey);
 		}
 		.cm-header-2::before {
 			content: '◇';
@@ -54,7 +61,7 @@ body {
 		.cm-header-3 {
 			padding: 0;
 			display: block;
-			border-bottom: 2px dotted #676767;
+			border-bottom: 2px dotted var(--black-grey);
 		}
 		.cm-header-3::before {
 			content: '◇';
@@ -64,7 +71,7 @@ body {
 		.cm-header-4 {
 			padding: 0;
 			display: block;
-			border-bottom: 2px dotted #676767;
+			border-bottom: 2px dotted var(--black-grey);
 		}
 		.cm-header-4::before {
 			content: '◇';
@@ -80,7 +87,7 @@ body {
 		h3,
 		h4 {
 			display: block;
-			border-bottom: 2px dotted #676767;
+			border-bottom: 2px dotted var(--black-grey);
 		}
 		& h1::before,
 		h2::before,
