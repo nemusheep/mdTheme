@@ -21,14 +21,76 @@ body {
 
 body {
 	--font-text-theme: "Gill Sans", sans-serif;
-	--text-muted: #c0c0c0; /*background color of code block*/
-	--ribbon-background: #867b94;
+	--text-muted: #c0c0c0; /*text color of code block*/
+	--ribbon-background: #796f85;
 	--background-primary-alt: #302e31; /*background color of ribbon*/
 }
 
 .theme-dark {
 	--background-primary: #242325;
-	--background-secondary: #414045;
+	--background-secondary: #353438;
+
+	.markdown-source-view {
+		/*source view*/
+		.cm-header-1 {
+			display: block;
+			border-bottom: 2px dotted #676767;
+		}
+		.cm-header-1::before {
+			content: '◇';
+			position: relative;
+			margin-right: 10px;
+		}
+		.cm-header-2 {
+			padding: 0;
+			display: block;
+			border-bottom: 2px dotted #676767;
+		}
+		.cm-header-2::before {
+			content: '◇';
+			position: relative;
+			margin-right: 10px;
+		}
+		.cm-header-3 {
+			padding: 0;
+			display: block;
+			border-bottom: 2px dotted #676767;
+		}
+		.cm-header-3::before {
+			content: '◇';
+			position: relative;
+			margin-right: 10px;
+		}
+		.cm-header-4 {
+			padding: 0;
+			display: block;
+			border-bottom: 2px dotted #676767;
+		}
+		.cm-header-4::before {
+			content: '◇';
+			position: relative;
+			margin-right: 10px;
+		}
+    }
+
+	.markdown-reading-view {
+		/*reader view*/
+		& h1,
+		h2,
+		h3,
+		h4 {
+			display: block;
+			border-bottom: 2px dotted #676767;
+		}
+		& h1::before,
+		h2::before,
+		h3::before,
+		h4::before {
+			content: '◇';
+			position: relative;
+			margin-right: 10px;
+		}
+	}
 }
 
 .theme-light {
