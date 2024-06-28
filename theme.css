@@ -8,6 +8,7 @@
 
 	/*color used in this template*/
 	--darkest-purple: #242325;
+	--dark-table: #2c2b2e;
 	--darker-purple: #353438;
 	--dark-purple: #796f85;
 	--white-grey: #c0c0c0;
@@ -31,6 +32,8 @@ body {
 	--text-muted: var(--white-grey); /*text color of code block*/
 	--ribbon-background: var(--dark-purple);
 	--background-primary-alt: var(--darkest-purple); /*background color of ribbon*/
+	--table-border-color: var(--dark-purple); /*border color of table*/
+	--table-background: var(--dark-table); /*background color of table*/
 }
 
 .theme-dark {
@@ -78,6 +81,10 @@ body {
 			position: relative;
 			margin-right: 10px;
 		}
+
+		.cm-line.HyperMD-codeblock { /*code block*/
+			background-color: var(--dark-table);
+		}
     }
 
 	.markdown-reading-view {
@@ -96,6 +103,9 @@ body {
 			content: '◇';
 			position: relative;
 			margin-right: 10px;
+		}
+		& code {
+			background-color: var(--dark-table);
 		}
 	}
 }
